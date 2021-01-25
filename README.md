@@ -3,12 +3,12 @@ HasretÇekirdek için c++ kelime öbekleri eklentisi
 
 
 
-class KarakterDizisi {
-	private:
+
+	private :
 		char *_KarakterDizisi;
 		unsigned char uzunluk;
 
-	public:
+	public :
 		KarakterDizisi();
 		void operator = (const KarakterDizisi KD);
 		void operator = (const char sagVeri);
@@ -31,4 +31,4 @@ class KarakterDizisi {
 		char* Al();
 
 
-};
+
