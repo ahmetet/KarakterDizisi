@@ -10,6 +10,10 @@ class KarakterDizisi {
 
 	public:
 		KarakterDizisi();
+		KarakterDizisi(char sagVeri);
+		KarakterDizisi(char *sagVeri);
+
+
 		void operator = (const KarakterDizisi KD);
 		void operator = (const char sagVeri);
 		void operator = (const char *sagVeri);
@@ -21,6 +25,8 @@ class KarakterDizisi {
 		bool operator == (const KarakterDizisi KD);
 		bool operator == (const char sagVeri);
 		bool operator == (const char *sagVeri);
+
+
 
 
 		friend ostream & operator<<(ostream &b, const KarakterDizisi KD);

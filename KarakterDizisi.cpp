@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "KarakterDizisi.h"
 #include <stdlib.h>
 
@@ -53,6 +54,37 @@ void KarakterDizisi::operator=(const char *sagVeri) {
 	}
 
 }
+
+
+  KarakterDizisi::KarakterDizisi(const char sagVeri) {
+	this->_KarakterDizisi = new char[2];
+	this->_KarakterDizisi[0] = sagVeri;
+	this->_KarakterDizisi[1] = '\0';
+	this->uzunluk = 1;
+
+}
+
+  KarakterDizisi::KarakterDizisi(char * sagVeri)
+  {
+
+	  int say = 0;
+	  while (sagVeri[say] != '\0') {
+		  say = say + 1;
+	  }
+	  this->uzunluk = say;
+	  this->_KarakterDizisi = new char[say];
+	  this->_KarakterDizisi[say] = '\0';
+
+	  say = 0;
+	  while (sagVeri[say] != '\0') {
+		  this->_KarakterDizisi[say] = sagVeri[say];
+		  say = say + 1;
+	  }
+
+  }
+
+   
+
 
 KarakterDizisi KarakterDizisi::operator+(const char sagVeri)
 {
@@ -211,4 +243,9 @@ bool KarakterDizisi::operator ==(const char *sagVeri) {
 	}
 
 
+}
+
+char * KarakterDizisi::operator[](int sira)
+{
+	return nullptr;
 }
