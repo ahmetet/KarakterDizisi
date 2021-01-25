@@ -10,6 +10,9 @@ HasretÇekirdek için c++ kelime öbekleri eklentisi
 
 	public :
 		KarakterDizisi();
+		KarakterDizisi(char sagVeri);
+		KarakterDizisi(char *sagVeri);
+		
 		void operator = (const KarakterDizisi KD);
 		void operator = (const char sagVeri);
 		void operator = (const char *sagVeri);
