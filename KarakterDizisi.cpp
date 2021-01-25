@@ -1,4 +1,4 @@
-#include "stdafx.h"
+
 #include "KarakterDizisi.h"
 #include <stdlib.h>
 
@@ -88,7 +88,7 @@ void KarakterDizisi::operator=(const char *sagVeri) {
 
 KarakterDizisi KarakterDizisi::operator+(const char sagVeri)
 {
-	char*yeni = new char[this->uzunluk + 2];//uzunluk \0 -1 verecek yani 2 ekle hem yeni char hemn \0 iÁin
+	char*yeni = new char[this->uzunluk + 2];//uzunluk \0 -1 verecek yani 2 ekle hem yeni char hemn \0 i√ßin
 	
 	int say = 0;
 	while (say < this->uzunluk) {
@@ -108,7 +108,7 @@ KarakterDizisi KarakterDizisi::operator+(const char * sagVeri)
 {	
 	KarakterDizisi Hack;
 	Hack = sagVeri;
-	char*yeni = new char[this->uzunluk + Hack.Uzunluk()];//uzunluk \0 -1 verecek yani 2 ekle hem yeni char hemn \0 iÁin
+	char*yeni = new char[this->uzunluk + Hack.Uzunluk()];//uzunluk \0 -1 verecek yani 2 ekle hem yeni char hemn \0 i√ßin
 
 	int say = 0;
 	while (say < this->uzunluk) {
